@@ -2,7 +2,7 @@
   "name": "calculadora",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://geodesicas.com",
+  "homepage": "https://timoteobs.github.io/",
   "dependencies": {
     "@material-ui/core": "^1.2.1",
     "numeral": "^2.0.6",
