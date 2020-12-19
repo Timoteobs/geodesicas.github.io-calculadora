@@ -14,6 +14,7 @@ import Freq3 from './frequencies/Three.js';
 import Freq4 from './frequencies/Four.js';
 import Freq5 from './frequencies/Five.js';
 import Freq6 from './frequencies/Six.js';
+import logo from './marca-geodesica.png';
 import './App.css';
 
 
@@ -67,19 +68,21 @@ class App extends Component {
       <React.Fragment>
         <CssBaseline />
 
-        <div className='logo'><img alt="Calculadora de Geodésica - Geodéscias" /></div>
-        <h1>Calculadora de Geodésica através do:</h1>
+        <div><img className="logo" src={logo} alt="Calculadora de Geodésica - Geodéscias" /></div>
+        <h2>Calculadora de Geodésica através do:</h2>
 
         <Grid container spacing={24}>
           <Grid item xs={12} className={classes.radius}>
             <TextField
               label="Raio"
               type="number"
+              id="outlined-basic"
               value={this.state.radius}
               onChange={this.handleChange('radius')}
               inputProps={{
                 min: 0
               }}
+
             />
           </Grid>
           {this.state.radius ? <React.Fragment>
@@ -90,7 +93,7 @@ class App extends Component {
             </Grid>
             <Grid item xs={10}>
               <AppBar position='static'>
-                <Tabs value={this.state.selectedFreq} onChange={this.setFreq}>
+                <Tabs value={this.state.selectedFreq} onChange={this.setFreq} className="button">
                   {[1, 2, 3, 4, 5, 6].map(freq => (
                     <Tab
                       value={freq}

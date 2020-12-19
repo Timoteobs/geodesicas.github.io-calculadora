@@ -1,5 +1,15 @@
 #root {
   width: 960px;
   margin: 20px auto 0 auto;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.logo{
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  background-color: #E3E3E3;
+  color: #000;
 }
 

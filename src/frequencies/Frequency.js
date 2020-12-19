@@ -108,7 +108,7 @@ class Frequency extends Component {
 						<img src={imageMap} alt={imageMapAlt} className={classes.imageMap} />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary" autoFocus>
+            <Button onClick={this.handleClose} color="default" autoFocus>
               Fechar
             </Button>
           </DialogActions>
